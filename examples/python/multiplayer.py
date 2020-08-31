@@ -8,7 +8,6 @@
 from __future__ import print_function
 
 from vizdoom import *
-from random import choice
 import sys
 
 from argparse import ArgumentParser
@@ -25,6 +24,7 @@ if __name__ == "__main__":
                         help="Path to the configuration file of the scenario."
                              " Please see "
                              "../../scenarios/*cfg for more scenarios.")
+    
     args = parser.parse_args()
     game = DoomGame()
 
