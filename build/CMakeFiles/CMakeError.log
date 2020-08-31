@@ -1,0 +1,160 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7abc2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7abc2.dir/build.make CMakeFiles/cmTC_7abc2.dir/build
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' に入ります
+Building C object CMakeFiles/cmTC_7abc2.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7abc2.dir/CheckSymbolExists.c.o   -c /home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7abc2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7abc2.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7abc2.dir/CheckSymbolExists.c.o  -o cmTC_7abc2 
+CMakeFiles/cmTC_7abc2.dir/CheckSymbolExists.c.o: 関数 `main' 内:
+CheckSymbolExists.c:(.text+0x1b): `pthread_create' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7abc2.dir/build.make:97: recipe for target 'cmTC_7abc2' failed
+make[1]: *** [cmTC_7abc2] Error 1
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_7abc2/fast' failed
+make: *** [cmTC_7abc2/fast] Error 2
+
+File /home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d84e3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d84e3.dir/build.make CMakeFiles/cmTC_d84e3.dir/build
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' に入ります
+Building C object CMakeFiles/cmTC_d84e3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d84e3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d84e3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d84e3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d84e3.dir/CheckFunctionExists.c.o  -o cmTC_d84e3 -lpthreads 
+/usr/bin/ld: -lpthreads が見つかりません
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d84e3.dir/build.make:97: recipe for target 'cmTC_d84e3' failed
+make[1]: *** [cmTC_d84e3] Error 1
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_d84e3/fast' failed
+make: *** [cmTC_d84e3/fast] Error 2
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9cc9c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9cc9c.dir/build.make CMakeFiles/cmTC_9cc9c.dir/build
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' に入ります
+Building C object CMakeFiles/cmTC_9cc9c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wno-pointer-sign -Wno-uninitialized -Wno-unused-but-set-variable -DCHECK_FUNCTION_EXISTS=itoa   -o CMakeFiles/cmTC_9cc9c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9cc9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9cc9c.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -Wno-pointer-sign -Wno-uninitialized -Wno-unused-but-set-variable -DCHECK_FUNCTION_EXISTS=itoa    -rdynamic CMakeFiles/cmTC_9cc9c.dir/CheckFunctionExists.c.o  -o cmTC_9cc9c 
+CMakeFiles/cmTC_9cc9c.dir/CheckFunctionExists.c.o: 関数 `main' 内:
+CheckFunctionExists.c:(.text+0x10): `itoa' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9cc9c.dir/build.make:97: recipe for target 'cmTC_9cc9c' failed
+make[1]: *** [cmTC_9cc9c] Error 1
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_9cc9c/fast' failed
+make: *** [cmTC_9cc9c/fast] Error 2
+
+
+Determining if the function filelength exists failed with the following output:
+Change Dir: /home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0e769/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0e769.dir/build.make CMakeFiles/cmTC_0e769.dir/build
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' に入ります
+Building C object CMakeFiles/cmTC_0e769.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -Wno-unused -Wno-unused-parameter -Wno-missing-field-initializers -Wno-unused-result   -DCHECK_FUNCTION_EXISTS=filelength   -o CMakeFiles/cmTC_0e769.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0e769
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e769.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -Wno-unused -Wno-unused-parameter -Wno-missing-field-initializers -Wno-unused-result   -DCHECK_FUNCTION_EXISTS=filelength    -rdynamic CMakeFiles/cmTC_0e769.dir/CheckFunctionExists.c.o  -o cmTC_0e769 
+CMakeFiles/cmTC_0e769.dir/CheckFunctionExists.c.o: 関数 `main' 内:
+CheckFunctionExists.c:(.text+0x10): `filelength' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0e769.dir/build.make:97: recipe for target 'cmTC_0e769' failed
+make[1]: *** [cmTC_0e769] Error 1
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_0e769/fast' failed
+make: *** [cmTC_0e769/fast] Error 2
+
+
+Determining if the function strupr exists failed with the following output:
+Change Dir: /home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3d184/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3d184.dir/build.make CMakeFiles/cmTC_3d184.dir/build
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' に入ります
+Building C object CMakeFiles/cmTC_3d184.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -Wno-unused -Wno-unused-parameter -Wno-missing-field-initializers -Wno-unused-result   -DCHECK_FUNCTION_EXISTS=strupr   -o CMakeFiles/cmTC_3d184.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3d184
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d184.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -Wno-unused -Wno-unused-parameter -Wno-missing-field-initializers -Wno-unused-result   -DCHECK_FUNCTION_EXISTS=strupr    -rdynamic CMakeFiles/cmTC_3d184.dir/CheckFunctionExists.c.o  -o cmTC_3d184 
+CMakeFiles/cmTC_3d184.dir/CheckFunctionExists.c.o: 関数 `main' 内:
+CheckFunctionExists.c:(.text+0x10): `strupr' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3d184.dir/build.make:97: recipe for target 'cmTC_3d184' failed
+make[1]: *** [cmTC_3d184] Error 1
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_3d184/fast' failed
+make: *** [cmTC_3d184/fast] Error 2
+
+
+Determining if the function stricmp exists failed with the following output:
+Change Dir: /home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_518ce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_518ce.dir/build.make CMakeFiles/cmTC_518ce.dir/build
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' に入ります
+Building C object CMakeFiles/cmTC_518ce.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -Wno-unused -Wno-unused-parameter -Wno-missing-field-initializers -Wno-unused-result   -DCHECK_FUNCTION_EXISTS=stricmp   -o CMakeFiles/cmTC_518ce.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_518ce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_518ce.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -Wno-unused -Wno-unused-parameter -Wno-missing-field-initializers -Wno-unused-result   -DCHECK_FUNCTION_EXISTS=stricmp    -rdynamic CMakeFiles/cmTC_518ce.dir/CheckFunctionExists.c.o  -o cmTC_518ce 
+CMakeFiles/cmTC_518ce.dir/CheckFunctionExists.c.o: 関数 `main' 内:
+CheckFunctionExists.c:(.text+0x10): `stricmp' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_518ce.dir/build.make:97: recipe for target 'cmTC_518ce' failed
+make[1]: *** [cmTC_518ce] Error 1
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_518ce/fast' failed
+make: *** [cmTC_518ce/fast] Error 2
+
+
+Determining if the function strnicmp exists failed with the following output:
+Change Dir: /home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_99949/fast"
+/usr/bin/make -f CMakeFiles/cmTC_99949.dir/build.make CMakeFiles/cmTC_99949.dir/build
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' に入ります
+Building C object CMakeFiles/cmTC_99949.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -Wno-unused -Wno-unused-parameter -Wno-missing-field-initializers -Wno-unused-result   -DCHECK_FUNCTION_EXISTS=strnicmp   -o CMakeFiles/cmTC_99949.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_99949
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99949.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -Wno-unused -Wno-unused-parameter -Wno-missing-field-initializers -Wno-unused-result   -DCHECK_FUNCTION_EXISTS=strnicmp    -rdynamic CMakeFiles/cmTC_99949.dir/CheckFunctionExists.c.o  -o cmTC_99949 
+CMakeFiles/cmTC_99949.dir/CheckFunctionExists.c.o: 関数 `main' 内:
+CheckFunctionExists.c:(.text+0x10): `strnicmp' に対する定義されていない参照です
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_99949.dir/build.make:97: recipe for target 'cmTC_99949' failed
+make[1]: *** [cmTC_99949] Error 1
+make[1]: ディレクトリ '/home/ishioka/workspace/ViZDoom/build/CMakeFiles/CMakeTmp' から出ます
+Makefile:126: recipe for target 'cmTC_99949/fast' failed
+make: *** [cmTC_99949/fast] Error 2
+
+

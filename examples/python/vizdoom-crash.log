@@ -1,0 +1,8 @@
+*** Fatal Error ***
+Address not mapped to object (signal 11)
+Address: 0x59
+
+System: Linux ishioka-CF-SX3JDHCS 5.4.0-42-generic #46~18.04.1-Ubuntu SMP Fri Jul 10 07:21:24 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+
+Executing: gdb --quiet --batch --command=gdb-respfile-IRLMgb

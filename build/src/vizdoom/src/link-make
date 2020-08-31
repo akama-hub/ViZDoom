@@ -1,0 +1,1 @@
+if [ ! -e /home/ishioka/workspace/ViZDoom/build/bin/vizdoom ]; then ln -sf /home/ishioka/workspace/ViZDoom/build/src/vizdoom/src/vizdoom /home/ishioka/workspace/ViZDoom/build/bin/vizdoom; fi
