@@ -100,7 +100,8 @@ def player_host(p):
 
 def player_join(p):
     game, actions = setup_player()
-    game.add_game_args("-join 127.0.0.1 +name Player" + str(p) + " +colorset " + str(p))
+    #game.add_game_args("-join 127.0.0.1 +name Player" + str(p) + " +colorset " + str(p))
+    game.add_game_args("-join 192.168.11.200 +name Player" + str(p) + " +colorset " + str(p))
     game.add_game_args(args)
 
     game.init()

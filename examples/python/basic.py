@@ -52,7 +52,7 @@ if __name__ == "__main__":
     game.set_doom_map("map01")
 
     # Sets resolution. Default is 320X240
-    game.set_screen_resolution(vzd.ScreenResolution.RES_640X480)
+    game.set_screen_resolution(vzd.ScreenResolution.RES_1280X720)
 
     # Sets the screen buffer format. Not used here but now you can change it. Default is CRCGCB.
     game.set_screen_format(vzd.ScreenFormat.RGB24)

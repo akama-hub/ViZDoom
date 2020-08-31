@@ -14,6 +14,7 @@ from argparse import ArgumentParser
 from time import sleep
 
 game = DoomGame()
+parser = ArgumentParser("ViZDoom example showing how to use SPECTATOR mode.")
 args = parser.parse_args()
 
 # Use CIG example config or your own.
@@ -23,7 +24,7 @@ game.load_config("../../scenarios/cig.cfg")
 game.set_doom_map("map02")  # Full deathmatch.
 
 # Host game with options that will be used in the competition.
-game.add_game_args("-host 2 "  
+game.add_game_args("-netmode 0 "  
                    # This machine will function as a host for a multiplayer game with this many players (including this machine). 
                    # It will wait for other machines to connect using the -join parameter and then start the game when everyone is connected.
                    "-deathmatch "           # Deathmatch rules are used for the game.
@@ -64,7 +65,10 @@ while not game.is_episode_finished():
     # Analyze the state.
 
     # Make your action.
-    game.make_action(choice(actions))
+    game.advance_action()
+    last_action = game.get_last_action()
+    reward = game.get_last_reward()
+    frags = game.get_game_variable(GameVariable.FRAGCOUNT)
 
     # Check if player is dead
     if game.is_player_dead():
