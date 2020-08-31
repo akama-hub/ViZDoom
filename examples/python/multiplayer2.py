@@ -31,6 +31,8 @@ if __name__ == "__main__":
     # Use CIG example config or your own.
     game.load_config("../../scenarios/deathmatch.cfg")
 
+    game.set_screen_resolution(vizdoom.ScreenResolution.RES_1280X720)
+
     game.set_doom_map("map01")  # Limited deathmatch.
     #game.set_doom_map("map02")  # Full deathmatch.
 
@@ -38,7 +40,7 @@ if __name__ == "__main__":
     #game.add_game_args("-join 192.168.11.200") # Connect to a host for a multiplayer game.
     game.add_game_args("-netmode 0 "
                         "-join 192.168.11.200 "
-                                )
+                        "-nomonsters"        )
 
 
     # Name your agent and select color
